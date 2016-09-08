@@ -6,8 +6,12 @@ All of these questions deal with the ticket machine example bundled in this repo
 ```
 public void setPrice(int cost)
 ```
+We can tell because is says "void", which implies that there would be a return value if that was not written.  Constructors do not have return values.
 
 ## Complete the body of the `setPrice` method so that it assigns the value of its parameter to the price field. Write your new method in the `lab04-ticket-machine`.
+
+
+
 
 ## Complete the body of the following method, whose purpose is to add the value of its parameter to a field named `score`.
 ```
@@ -46,10 +50,13 @@ Please insert the correct amount of money.
 ```
 System.out.println("# " + "price" + " cents.");
 ```
+Instead of printing the actual price on the ticket, the machine would just print "price"
 
 ## What would be printed here?
 ```
 System.out.println("# price cents.");
+
+The machine would print the phrase "# price cents"
 ```
 
 ## Could either of the previous two versions be used to show the price of tickets in different ticket machines? Explain your answer.
