@@ -25,6 +25,8 @@ public void increase(int points)
 ```
 ## Is the `increase` method in the previous question a mutator? If so, how could you demonstrate this?
 
+This is a mutator because it changes the value of "score"
+
 ## Complete the following method, whose purpose is to subtract the value of its parameter from a field named `price`. Add your new method to the `lab04-ticket-machine`.
 ```
 /**
@@ -40,6 +42,7 @@ public void discount(int amount)
 ```
 System.out.println("My cat has green eyes.");
 ```
+My cat has green eyes.
 
 ## Add a method called `prompt` to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a `void` return type and take no parameters. The body of the method should print the following single line of output: 
 ```
@@ -61,6 +64,8 @@ The machine would print the phrase "# price cents"
 
 ## Could either of the previous two versions be used to show the price of tickets in different ticket machines? Explain your answer.
 
+No, because it would never print the actual price.
+
 ## Add a `showPrice` method to the `TicketMachine` class in the `lab04-ticket-machine`. This should have a void return type and take no parameters. The body of the method should print (here `xyz` should be replaced by the value held in the `price` field when the method is called):
 ```
 The price of a ticket is xyz cents.
@@ -69,8 +74,14 @@ The price of a ticket is xyz cents.
 
 ## Create two ticket machines with differently priced tickets. Do calls to their showPrice methods show the same output, or different? How do you explain this effect?
 
+They show different outputs because i inserted different price variables
+
 ## Modify the constructor of `TicketMachine` in the `lab04-ticket-machine` so that it no longer has a parameter. Instead, the price of tickets should be fixed at 1,000 cents. What effect does this have when you construct ticket-machine objects within BlueJ?
+
+The ticket machine no longer asks for a price in blueJ
 
 ## Give the class two constructors. One should take a single parameter that specifies the price, and the other should take no parameter and set the price to be a default value of your choosing. Test your implementation by creating machines via the two different constructors.
 
 ## Implement a method, `empty`, that simulates the effect of removing all money from the machine. This method should have a `void` return type, and its body should simply set the `total` field to zero. Does this method need to take any parameters? Test your method by creating a machine, inserting some money, printing some tickets, checking the total, and then emptying the machine. Is the `empty` method a mutator or an accessor?
+
+the "empty" method is a mutator
